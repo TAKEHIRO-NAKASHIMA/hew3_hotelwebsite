@@ -1,0 +1,79 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #87ceeb, #ffe4b5);
+}
+
+.header {
+  background: linear-gradient(135deg, #ffa07a, #ff6347);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header p {
+  margin-top: 10px;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.reservation-detail {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.reservation-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.reservation-card h2 {
+  text-align: center;
+  color: #ff6347;
+  margin-bottom: 20px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.detail-item strong {
+  margin-left: 10px;
+  flex: 0 0 120px;
+  color: #2e8b57;
+}
+
+.detail-item span {
+  flex: 1;
+  color: #333;
+}
+
+.icon {
+  color: #ffa07a;
+  font-size: 1.5rem;
+}
+
+.detail-item:hover .icon {
+  color: #ff6347;
+}
+
+.reservation-card .detail-item:last-child {
+  margin-bottom: 0;
+}

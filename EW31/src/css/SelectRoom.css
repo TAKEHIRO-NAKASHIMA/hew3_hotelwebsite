@@ -1,0 +1,339 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .room-selection {
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .guest-section2{
+    align-items: center;
+  }
+  .guest-input,
+.date-input {
+  font-size: 14px;
+  padding: 2px 5px;
+  margin-left: 5px;
+  width: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.guest-input {
+  width: 50px;
+  text-align: center;
+}
+
+.date-input {
+  width: 180px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.divider {
+  margin: 0 10px;
+  color: #666;
+}
+
+/* .date {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+} */
+
+  
+  /* Title Section */
+  .title {
+    text-align: center;
+    font-size: 40px;
+    color: #f57c00;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  
+  /* Main Content Layout */
+  .main-content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Room List Section */
+  .room-list {
+    flex-grow: 2;
+    flex-basis: 70%;
+  }
+  
+  .sub-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Room Card Section */
+  .room-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-direction: column; /* 画像とテキストを縦に配置 */
+  }
+  
+  .room-image {
+    width: 100%; /* カード全幅に設定 */
+    height: 200px; /* 高さを調整 */
+    object-fit: cover;
+  }
+  
+  .room-details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .room-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .room-info {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .room-description {
+    font-size: 12px;
+    color: #999;
+    margin: 5px 0;
+  }
+  
+  .room-price {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .reserve-button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .reserve-button:hover {
+    background-color: #357ab7;
+  }
+  
+  /* Reasons to Book Section */
+  .reasons-to-book {
+    flex-grow: 1;
+    flex-basis: 30%;
+    max-width: 350px;
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 8px;
+    height: 400px;
+  }
+  
+  .reasons-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .reasons-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .reasons-list li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-right: 1px dashed #000;
+    padding: 0 20px;
+  }
+  
+  .header-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+  }
+  
+  .header-item {
+    font-size: 16px;
+    margin: 5px 0 0;
+    color: #333;
+  }
+  .header-flex{
+    display: flex;
+  }  
+
+
+
+  /*  */
+  .guest-section2{
+    margin-left: 0px;
+    text-align: center;
+    /* margin-right: 100px; */
+    padding: 10px;
+
+  }
+
+
+  .header-container2 {
+    display: flex;
+    justify-content: space-between !important; /* 均等に配置 */
+    align-items: center; /* 縦方向を中央揃え */
+    background-color: #e6e6e6;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    gap: 20px; /* セクション間の余白 */
+  }
+  
+  .guest-section2 {
+    display: flex;
+    align-items: center; /* 内部要素を中央揃え */
+    gap: 20px; /* 内部要素の間隔 */
+    flex: 1; /* 均等幅を確保 */
+  }
+  .check-section {
+    display: flex;
+    align-items: center; /* 内部要素を中央揃え */
+    gap: 20px; /* 内部要素の間隔 */
+    flex: 1; /* 均等幅を確保 */
+    margin-right: 160px !important;
+  }
+
+  .check-section{
+    gap: 100px !important; /* 内部要素の間隔 */
+  }
+  
+  .guest-info2,
+  .check-in,
+  .check-out {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* ラベルと入力欄の間隔 */
+  }
+  
+  .section-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .label {
+    font-size: 14px;
+  }
+  
+  .date,
+  .guest-info2 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .guest-input,
+  .date-input {
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .guest-input {
+    width: 50px;
+    text-align: center;
+  }
+  
+  .date-input {
+    width: 180px;
+  }
+  .guest-section2 {
+  display: flex;
+  flex-direction: column; /* 縦方向に配置 */
+  /* align-items: flex-start; 左揃え */
+  gap: 10px; /* 見出しと内容の間隔 */
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px; /* タイトル下の余白 */
+}
+
+.guest-info2 {
+  display: flex;
+  gap: 10px; /* 各ラベル間の間隔 */
+}
+
+.label {
+  font-size: 14px;
+  display: flex;
+  align-items: center; /* ラベルと入力欄を縦方向に揃える */
+}
+
+.guest-input {
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 60px; /* 入力欄の幅 */
+  text-align: center;
+}
+
+
+.reasons-list {
+  list-style: none;
+  padding: 0;
+}
+
+.reasons-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reasons-list .icon {
+  margin-right: 10px;
+  color: #007BFF; /* アイコンの色 */
+  font-size: 1.5rem;
+}

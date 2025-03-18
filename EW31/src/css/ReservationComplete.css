@@ -1,0 +1,107 @@
+/* 南国っぽい背景 */
+.reservation-complete {
+    position: relative;
+    background: url('/public/assets/img/detail-2.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Poppins', sans-serif; /* カジュアルでリゾート感のあるフォント */
+  }
+  
+  /* ヤシの木が揺れるアニメーション */
+  .palm-tree {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: url('/public/assets/img/yasi2.png') no-repeat center center;
+    background-size: contain;
+    animation: sway 4s infinite ease-in-out;
+  }
+  
+  .sway {
+    animation: sway 4s infinite ease-in-out;
+  }
+  
+  @keyframes sway {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(5deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+  
+  /* コンテンツエリア */
+  .content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #FFDC7D; /* 南国感のある黄色 */
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #FFDC7D; /* 南国感のある黄色 */
+  }
+  
+  .details p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  /* ボタンのスタイル */
+  .actions button {
+    background-color: #FF7F50; /* コーラルオレンジ */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .actions button:hover {
+    background-color: #FF4500; /* ホバー時の色 */
+  }
+  
+  /* 背景のアニメーション */
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

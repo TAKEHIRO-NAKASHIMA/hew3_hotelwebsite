@@ -1,0 +1,100 @@
+/* コンテナ全体の設定 */
+.mypage-container {
+    padding: 20px;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* タイトル */
+  .mypage-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: #ff9900;
+    text-shadow: 2px 2px #ffffff;
+    text-align: center;
+  }
+  
+  .mypage-subtitle {
+    font-size: 1.5rem;
+    color: #006400;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* エラー表示 */
+  .mypage-error {
+    color: #ff3333;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* 予約リストの設定 */
+  .reservation-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* カードを複数列に */
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* カードデザイン */
+  .reservation-card {
+    background: rgba(255, 223, 186, 0.9); /* 明るいベージュ背景 */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    max-height: 350px;
+    border: 3px solid #ff7f50; /* 南国風のコーラル色 */
+  }
+  
+  .reservation-card:hover {
+    transform: scale(1.05);
+    border-color: #ffa07a; /* ホバー時に明るい色へ変更 */
+  }
+  
+  /* カード画像 */
+  .reservation-image {
+    width: 100%;
+    height: 150px; /* 画像の高さを固定 */
+    object-fit: cover;
+    border-bottom: 3px solid #ff7f50; /* 下部に装飾 */
+  }
+  
+  /* 情報の表示エリア */
+  .reservation-info {
+    padding: 10px;
+    color: #2f4f4f; /* ダークグリーン */
+    font-size: 0.95rem;
+  }
+  
+  .reservation-info h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #006400; /* ダークグリーン */
+  }
+  
+  .reservation-info p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  
+  .reservation-price {
+    color: #ff4500; /* オレンジレッド */
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .reservation-date,
+  .reservation-status {
+    font-size: 0.8rem;
+    color: #006400;
+  }
+  
+  /* モバイル対応 */
+  @media (max-width: 600px) {
+    .reservation-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
